@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script defer src="./index.js"></script>
+		<link rel="stylesheet" href="styles.css" />
+		<title>Todo List</title>
+	</head>
+	<body
+		class="grid grid-rows-layout grid-cols-layout xl:grid-cols-xlLayout lg:grid-cols-lgLayout sm:grid-cols-layout overflow-hidden">
+		<nav
+			class="flex items-center col-start-1 col-end-4 p-4 bg-blue-600 text-white">
+			<span class="text-md p-6 mr-10 uppercase md:text-lg lg:text-2xl"
+				>To-do List</span
+			>
+			<a href="#" class="text-sm p-4 md:text-md lg:text-lg">Home</a>
+			<a href="#" class="text-sm p-4 md:text-md lg:text-lg">About</a>
+		</nav>
+		<div class="col-start-2 col-end-3 mt-10">
+			<form class="flex justify-between">
+				<input
+					class="hover:border-gray-400 focus:border-blue-500 rounded-3xl border-4 w-10/12 p-3 text-black"
+					placeholder="Write your task here..."
+					type="text"
+					id="title_input" />
+				<button
+					class="rounded-full w-40 bg-blue-500 text-white hover:bg-white hover:text-blue-500 hover:border-2 border-blue-500"
+					type="submit"
+					id="add_task_btn">
+					Add Task
+				</button>
+			</form>
+
+			<section
+				class="mt-10 pr-3 pl-3 border-4 border-blue-500 rounded-2xl divide-y-2 divide-blue-200 overflow-scroll max-h-60vh"
+				id="tasks_container">
+				<h2 id="empty_list_heading">EMPTY LIST</h2>
+			</section>
+		</div>
+	</body>
+</html>
